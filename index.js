@@ -43,17 +43,13 @@ async function run() {
       console.log(cardProducts);
       res.json(cardProducts);
     });
-    app.get("/", (req, res) => {
-      res.send('<h2>Server Running Successfully</h2>');
-    });
   } finally {
   }
 }
-
-run().catch(console.error);
 app.get("/", (req, res) => {
-  res.send("server Running Successfull");
+  res.send('<h2 style="text-align:center">Server Running Successfully</h2>');
 });
+run().catch(console.error);
 
 app.listen(port, () => {
   console.log(`server is Running On http://localhost:${port}`);
