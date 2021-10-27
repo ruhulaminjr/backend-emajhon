@@ -49,6 +49,9 @@ async function run() {
 app.get("/", (req, res) => {
   res.send('<h2 style="text-align:center">Server Running Successfully</h2>');
 });
+app.get("/ruhul", (req, res) => {
+  res.send('<h1 style="text-align:center"> Hello Ruhul AMin Jr </h1>');
+});
 run().catch(console.error);
 
 app.listen(port, () => {
